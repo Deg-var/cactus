@@ -1,0 +1,719 @@
+            body {
+                font-family: 'Roboto Condensed', sans-serif;
+                margin: 0;
+                background-color: rgb(255, 255, 255);
+                letter-spacing: 0px;
+                font-weight: 900;
+                font-family: 'Oswald', sans-serif;
+            }
+            
+            .spacer {
+                height: 20px;
+            }
+            
+            nav {
+                display: grid;
+                background-color: white;
+                box-shadow: 0px 17px 42px 0px #000000;
+                grid-template-columns: auto 1fr 1fr 1fr 1fr;
+                padding: 0;
+                margin: 2px;
+                height: 60px;
+                font-weight: 500;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .nav1 {
+                display: grid;
+                border: solid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                font-weight: 500;
+                font-family: 'Oswald', sans-serif;
+            }
+            
+            .nav2 {
+                display: grid;
+                width: 100%;
+                border: solid;
+            }
+            
+            .nameshop1 {
+                margin: auto;
+                text-align: center;
+                height: 60px;
+                margin-top: 7px;
+                padding-left: 15px;
+            }
+            
+            .nameshop {
+                text-align: left;
+                position: relative;
+                top: -10px;
+                left: -17px;
+                padding: 15px 60px;
+                vertical-align: middle;
+                font-family: 'Marck Script', cursive;
+                font-size: 30px;
+                color: rgba(0, 202, 0, 0.575);
+                text-shadow: 0px 0px 1px rgb(0, 170, 0);
+            }
+            
+            .navknopka {
+                padding: 10px;
+                margin: auto;
+            }
+            
+            .nazvanie {
+                margin-left: auto
+            }
+            
+            .kart1 {
+                height: 400px;
+                display: grid;
+                background-color: rgba(255, 255, 255, 0.178);
+            }
+            
+            .svas {
+                grid-area: svas;
+                position: relative;
+                height: fit-content;
+                width: fit-content;
+                margin: auto;
+                margin-bottom: auto;
+                padding: 5px 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 20px;
+                padding: 10px 20px;
+                transition: color 0.6s ease;
+                transition: background-color 0.6s ease;
+                box-shadow: 0px 0px 0px 1px #ffffff;
+                text-shadow: 1px 1px 5px #000000;
+            }
+            
+            .svas:hover {
+                color: rgb(216, 216, 216);
+                background-color: rgba(128, 128, 128, 0.322);
+            }
+            
+            .tovar {
+                display: table;
+                margin: auto;
+                text-align: center;
+                display: inline-block;
+                padding: 18px;
+                padding-bottom: 30px;
+            }
+            
+            .forma {
+                width: 100%;
+                padding: 50px 10%;
+                background-color: darkgray;
+                text-align: center;
+                margin: 20px auto;
+                font-size: 30px;
+                background-color: rgba(0, 119, 0, 0.336);
+            }
+            
+            .mailTitle {
+                margin-bottom: 20px;
+            }
+            
+            .mail {
+                height: 70px;
+                margin: auto;
+                grid-area: mail;
+            }
+            
+            .name {
+                text-align: end;
+                margin-right: 10px;
+            }
+            
+            .tel {
+                text-align: end;
+                margin-right: 10px;
+            }
+            
+            .email {
+                text-align: end;
+                margin-right: 10px;
+            }
+            
+            .zakaz {
+                text-align: end;
+                margin-right: 10px;
+                height: 100px;
+            }
+            
+            .kus {
+                display: grid;
+                grid-template-columns: 110px 400px;
+                margin: 10px 25%;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                font-size: 16px;
+            }
+            
+            .but {
+                margin: 0;
+            }
+            
+            .but2 {
+                border: 3px solid;
+                padding: 5px 10px 5px 10px;
+                margin: 0px 10px;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 600;
+                letter-spacing: 1px;
+                background-color: rgba(255, 245, 238, 0);
+                cursor: pointer;
+                transition: background-color 0.6s ease;
+            }
+            
+            .but2:hover {
+                background-color: rgb(255, 255, 255);
+            }
+            
+            .comment {
+                width: 100%;
+                height: 90%;
+            }
+            
+            .vse {
+                padding-bottom: 20px;
+            }
+            
+            .kart {
+                width: 27%;
+                height: auto;
+                text-align: center;
+                display: inline-grid;
+                grid-template: "pic pic" "nazvanie cost" "podpis cost" "podpis sale";
+                vertical-align: middle;
+                padding: 10px 10px 10px 10px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.185);
+                margin-left: 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 17px;
+                font-weight: 700;
+                letter-spacing: -1px;
+            }
+            
+            .pic {
+                margin-right: auto;
+                width: 100%;
+                vertical-align: middle;
+                grid-area: pic;
+            }
+            
+            .cost {
+                grid-area: cost;
+                text-align: right;
+                margin: 10px 0px 0px 0px;
+            }
+            
+            .sale {
+                grid-area: sale;
+                text-align: right;
+                border: solid 3px;
+                width: fit-content;
+                padding: 5px 10px 5px 10px;
+                margin-left: auto;
+                font-weight: 600;
+                font-family: 'Oswald', sans-serif;
+                font-size: 14px;
+                letter-spacing: 0px;
+                cursor: pointer;
+                margin-bottom: 2px;
+                transition: color 0.6s ease;
+            }
+            
+            .sale:hover {
+                color: rgba(0, 0, 0, 0.582)
+            }
+            
+            .nazvanie {
+                grid-area: nazvanie;
+                text-align: left;
+                width: 100%;
+                margin: 10px 0px 0px 0px;
+            }
+            
+            .podpis {
+                grid-area: podpis;
+                text-align: left;
+                font-weight: 100;
+                margin-top: 10px;
+                word-wrap: break-word;
+                margin-right: 10px;
+            }
+            
+            .podpis_text {}
+            
+            .pic1 {
+                margin: auto;
+                max-height: 300px;
+                height: auto;
+                display: table-cell;
+                vertical-align: middle;
+                margin-left: 20px;
+                grid-area: pic1;
+            }
+            
+            .title {
+                grid-area: title1;
+            }
+            
+            header {
+                background-color: rgb(255, 255, 255);
+                background-size: 100%;
+            }
+            
+            .devis {
+                font-size: 50px;
+                text-align: center;
+            }
+            
+            .name_slaider {
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .vse {
+                text-align: center;
+                margin: auto;
+                padding: 18px;
+            }
+            
+            .novo {
+                text-align: center;
+                display: none;
+            }
+            
+            main {}
+            
+            .levknopka {
+                padding: 10px;
+                margin: 10px;
+                background-color: rgb(223, 217, 194);
+                border-radius: 10px;
+            }
+            
+            .osnova {
+                grid-area: osnova;
+            }
+            
+            .news {
+                text-align: center;
+                display: grid;
+                vertical-align: middle;
+                grid-template: [header-left] "img_news ima" 30px [header-right] [main-left] "img_news  text_news" 1fr [main-right];
+                background-color: rgba(211, 207, 204, 0.705);
+                margin: 40px;
+                border-radius: 10px;
+                overflow: auto;
+            }
+            
+            .ima {
+                grid-area: ima;
+                font-size: 30px;
+                margin: 10px 40px 4px 40px;
+                height: 45px;
+                background-color: rgba(167, 163, 161, 0.507);
+                border-radius: 10px;
+                box-shadow: 0 0 0 1px rgba(122, 119, 117, 0.507);
+            }
+            
+            .text_news {
+                grid-area: text_news;
+                margin: auto;
+                margin-right: 30px;
+                font-size: 20px;
+            }
+            
+            .img_news {
+                grid-area: img_news;
+                max-width: 300px;
+                margin: 10px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            a:hover {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            footer {
+                margin: 0;
+                margin-top: 0px;
+            }
+            
+            * {
+                box-sizing: border-box
+            }
+            /* Slideshow container */
+            
+            .slideshow-container {
+                position: relative;
+                height: 400px;
+                vertical-align: middle;
+            }
+            /* Hide the images by default */
+            
+            .mySlides {
+                vertical-align: middle;
+                display: none;
+                /*background: url("img/fon.jpg")no-repeat;*/
+                background-size: 100%;
+                margin: 0;
+                background-color: rgb(97, 94, 94);
+            }
+            /* Next & previous buttons */
+            
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            /* Position the "next button" to the right */
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            /* On hover, add a black background color with a little bit see-through */
+            
+            .navknopka:hover {
+                background-color: rgba(255, 255, 255, 0.178);
+                box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 0.178);
+                border-radius: 10px;
+            }
+            
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(175, 175, 175, 0.267);
+            }
+            /* Caption text */
+            
+            .text {
+                color: #ffffff;
+                font-size: 60px;
+                padding: 8px 12px;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                grid-area: text;
+                position: relative;
+                text-shadow: 1px 1px 5px #000000;
+            }
+            /* Number text (1/3 etc) */
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            /* The dots/bullets/indicators */
+            
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                box-shadow: 1px 1px 5px 0px;
+            }
+            
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
+            /* Fading animation */
+            
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            .knopkee {
+                color: rgb(255, 255, 255);
+            }
+            /* Style the buttons that are used to open and close the levknopkapanel */
+            
+            .accordion {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                cursor: pointer;
+                padding: 18px;
+                border: none;
+                text-align: center;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+                width: 1fr;
+                font-weight: 600;
+                background-color: white;
+                letter-spacing: -0px;
+                font-weight: 600;
+                font-family: 'Oswald', sans-serif;
+                line-height: 0;
+                height: 60px;
+                border-bottom: solid rgba(255, 255, 255, 0) 5px;
+                transition: border 0.6s ease;
+            }
+            
+            .accordion:hover {
+                border-bottom: solid 5px;
+            }
+            
+            .panel {
+                padding: 20px 20px 40px 9%;
+                max-height: 0;
+                overflow: hidden;
+                border-radius: 0 0 0 0px;
+                position: absolute;
+                z-index: 1;
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                top: 60px;
+                left: -0px;
+                display: none;
+                grid-template: "podclass1 podclass2 panelpic" " podclass3 podclass4 panelpic"/1fr 1fr 1fr;
+                box-shadow: 0px 10px 20px -15px #000000;
+                cursor: default;
+            }
+            
+            .panelpic {
+                padding-top: 10px;
+                grid-area: panelpic;
+                height: 200px;
+                width: 200px;
+            }
+            
+            .podclass1 {
+                background-color: rgb(255, 255, 255);
+                padding: 5px;
+                margin: 10px;
+                border-radius: 15px;
+                text-align: left;
+                z-index: 1;
+                display: grid;
+                grid-area: podclass1;
+                margin-bottom: 40px;
+            }
+            
+            .podclass2 {
+                background-color: rgb(255, 255, 255);
+                padding: 5px;
+                margin: 10px;
+                border-radius: 15px;
+                text-align: left;
+                z-index: 1;
+                display: grid;
+                grid-area: podclass2;
+                margin-bottom: 40px;
+            }
+            
+            .podclass3 {
+                background-color: rgba(255, 255, 255, 0.555);
+                padding: 5px;
+                margin: 10px;
+                border-radius: 15px;
+                text-align: left;
+                z-index: 1;
+                display: grid;
+                grid-area: podclass3;
+            }
+            
+            .podclass4 {
+                background-color: rgba(255, 255, 255, 0.555);
+                padding: 5px;
+                margin: 10px;
+                border-radius: 15px;
+                text-align: left;
+                z-index: 1;
+                display: grid;
+                grid-area: podclass4;
+            }
+            
+            .lorem {
+                height: 30px;
+                position: relative;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                border: solid white 1px;
+                vertical-align: middle;
+                top: 20px;
+                line-height: 25px;
+                cursor: pointer;
+            }
+            
+            .info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0;
+                padding: 20px 15% 20px 15%;
+            }
+            
+            .tele {}
+            
+            .icon {
+                margin-top: 20px;
+            }
+            
+            .dots {
+                position: relative;
+                bottom: 55px;
+            }
+            
+            .ipic {
+                height: 30px;
+                margin-bottom: 0px;
+                cursor: pointer;
+                margin-left: 10px;
+                transition: opacity 0.6s ease;
+            }
+            
+            .ipic:hover {
+                opacity: 70%;
+            }
+            
+            .ipic:nth-child(1) {
+                height: 23px;
+                margin-bottom: 0px;
+                cursor: pointer;
+                margin-right: 5px;
+                position: relative;
+                top: -3px;
+            }
+            
+            .zagcel {
+                margin-bottom: 9px;
+            }
+            
+            .zagkontakt {
+                margin-bottom: 9px;
+                text-align: end;
+            }
+            
+            .onas {
+                grid-area: onas;
+            }
+            
+            .konta {
+                grid-area: konta;
+                text-align: end;
+            }
+            
+            .kontakt {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                margin-bottom: 9px;
+                font-size: 12px;
+                text-align: end;
+            }
+            
+            .cel {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                margin-bottom: 9px;
+                font-size: 12px;
+            }
+            
+            .logo {
+                padding: 0;
+                display: flex;
+                height: 60px;
+                padding-right: 5px;
+            }
+            
+            .logopic {
+                padding: 10px;
+                height: 60px;
+            }
+            
+            .levo {
+                grid-area: levo;
+                position: absolute;
+                left: 100px;
+                z-index: 0;
+            }
+            
+            section {
+                margin: 0px 50px;
+                display: grid;
+                grid-template: "onas konta";
+                padding: 20px;
+            }
+            
+            .onas {
+                grid-area: onas;
+            }
+            
+            .konta {
+                grid-area: konta;
+            }
+            
+            .copy {
+                text-align: center;
+                padding: 20px;
+                font-weight: 300;
+                letter-spacing: 0px;
+                color: rgb(46, 46, 46);
+                background-color: rgb(107, 107, 107);
+                font-family: 'Montserrat', sans-serif;
+                background-color: rgba(0, 119, 0, 0.336);
+            }
+            
+            .mini {
+                margin-top: 10px;
+                font-size: 15px;
+                height: 0px;
+                line-height: 1px;
+                margin-left: 6px;
+            }
